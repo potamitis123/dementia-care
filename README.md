@@ -12,3 +12,9 @@ diarization, diarization_v2. Expects a trining folder with subfolders with names
 eval_diarization: It takes a single csv as input and outputs evaluation metrics
 
 fall_detection.py: Finds if there is a fall of an elder in an .mp4 file. You should install Qwen/Qwen3-VL-2B-Instruct. Example: python fall_detection.py -i female_fall.mp4
+
+RAG. A self-sufficient fold implementing RAG in the context of elders with dementia nursing. Usage: python RAG_suggestion.py --json sound_events_single_day.json --pdf Caring_dementia_guide.pdf
+json sound_events_single_day.json Audio events in a day as classified by an AST general audio classifier
+Caring_dementia_guide.pdf This is the reliable corpus wrt to caregiving for elders with dementia. Replace with a larger, more sophisticated book in pdf form
+RAG_suggestion.py requires an OpenAIs API key
+
