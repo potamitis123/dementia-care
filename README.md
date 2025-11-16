@@ -10,3 +10,5 @@ ESR: Emotion Speech Recognition of a folder of recordings. Recs should 16kHz. It
 diarization, diarization_v2. Expects a trining folder with subfolders with names A, B, C, D, E, F, A+B, A+C. A to F are the speakers. Each single letter folder has recordings from a single speaker. The name of the folder denotes the speaker. A+B means that folder contains recordings each have a conversation with speaker A and B only. It expects an output folder with recordings.
 
 eval_diarization: It takes a single csv as input and outputs evaluation metrics
+
+fall_detection.py: Finds if there is a fall of an elder in an .mp4 file. You should install Qwen/Qwen3-VL-2B-Instruct. Example: python fall_detection.py -i female_fall.mp4
